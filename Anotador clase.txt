@@ -1,0 +1,42 @@
+@media screen and (min-width: 768px) {
+
+.body {
+	background-color: #000000;
+}
+
+la propiedad min-width o max-width:
+el min es desde
+el max es hasta
+----------------------------------------------------------------------------------------------------------------------------------
+esta cantidad de @media query
+320- 480 - 768 - 1024
+
+----------------------------------------------------------------------------------------------------------------------------------
+esto es un ID="contenedor__general"
+
+#contenedor__general
+max width: 1920px;
+margin: auto;
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+meta viewport
+
+proba el flex-direction: row
+
+bracket pari colorizer
+
+frontendmentor.io/challenges  ---> PARA HACER UN PORTFOLIO
+
+
+
+
+
+
+
+
+
+
+
+
