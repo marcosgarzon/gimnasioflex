@@ -84,14 +84,6 @@ main {
 }
 /* NAV Y REUTILIZABLES FIN */
 
-
-
-/* MENU HAMBURGUESA */
-
-.menu__estilo {
-  input[type="text"]
-}
-
 /* FOOTER INICIO */
 
 .footer {
@@ -111,7 +103,7 @@ main {
   width: 100%;
   height: 80vh;
   color: white;
-  background-image: url("../assets/herobanner.png");
+  background-image: url("../assets/imagen6.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -146,7 +138,6 @@ main {
 /* VIDEO + DESCRIPCION INICIO */
 
 .video__descripcion {
-  background-color: #24252a;
   color: white;
   padding: 1rem 1rem;
   width: 100%;
@@ -418,9 +409,11 @@ main {
 
 /* MEDIA QUERIES */
 
+
 @media screen and (max-width: 425px) 
 {
 
+    /* NAVEGACION */
     .li,
     .a,
     .button {
@@ -478,5 +471,16 @@ main {
       color: #0088a9;
     }
     
+    /* HERO */
 
-}
+    .hero__article{
+      font-size: 1.7rem;
+    }
+
+
+
+
+
+
+
+  }
