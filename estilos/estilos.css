@@ -313,28 +313,37 @@ main {
 /* SECCION EQUIPAMIENTO INICIO */
 
 .equipamiento__contenedor {
-  background-color: #24252a;
-  color: white;
-  padding: 2rem 4rem;
-  height: 215vh;
-  gap: 5rem;
-  overflow: hidden;
-  font-size: 2rem;
+  max-width: 800px;
+  padding: 1rem;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
-  grid-column-gap: 16px;
-  grid-row-gap: 0rem;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+  grid-gap: 1rem;
+
 }
 
-.img__equipamiento{
-    display: grid;
+.equipamiento__contenedor img {
+  object-fit: cover;
   width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 
-.p__equipamiento{
-  display: grid;
-  width: 100%;
+.item-a {
+  grid-row: 1 / 3;
+}
+ 
+.item-b {
+  grid-column: 3 / 5;
+}
+ 
+.item-c {
+  grid-row: 2 / 4;
+}
+ 
+.item-d {
+  grid-column: 3 / 5;
 }
 
 /* SECCION EQUIPAMIENTO FIN */
@@ -361,7 +370,7 @@ main {
 }
 
 .logo__contacto span{
-  color: #B70E21;
+  color: rgba(0, 136, 169, 1);
 }
 
 .contacto-envoltura {
@@ -403,11 +412,11 @@ main {
     background: none;
     outline: 0;
     color: #fff;
-    border-bottom: 1px solid #d63031;
+    border-bottom: 1px solid rgba(0, 136, 169, 1);
 }
 
 .contacto-form form button {
-  background: #B70E21;
+  background: rgba(0, 136, 169, 1);
   border: 0;
   text-transform: uppercase;
   padding: 1em;
@@ -415,14 +424,14 @@ main {
 
 .contacto-form form button:hover,
 .contacto-form form button:focus {
-    background: #d63031;
+    background: rgba(0, 136, 169, 1);
     color: #fff;
     transition: background-color 1s ease-out;
     outline: 0;
 }
 
 .contacto-info {
-  background: #000;
+  background: rgba(0, 136, 169, 1);
 }
 
 .contacto-info h4, .contacto-info ul, .contacto-info p {
@@ -435,54 +444,34 @@ main {
 /* SECCION CLASES INICIO */
 
   .main__clases{
-    display: grid; 
-    background-color: #24252a;
-    color: white;
-    font-size: 1rem;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 3rem 1fr 1fr 1fr 1fr; 
-    gap: 1rem 1rem; 
-    grid-template-areas: 
-      "h1clases ."
-      "div1clases div2clases"
-      "div3clases div4clases"
-      "div5clases div6clases"
-      "div7clases div8clases"; 
-
-  }
-
-
-.h1clases { grid-area: h1clases; 
-  margin-left: 1rem;
-  margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 2rem 4rem;
+    width: 100%;
+    height: 100%;
+    gap: 5rem;
+    overflow: hidden;
+    align-items: center;
+    font-size: 2rem;
   }
 
 .div1clases { 
-  grid-area: div1clases; 
-  margin-left: 1rem;
+  grid-area: 1 / 1 / 2 / 2;
 }
-.div2clases { grid-area: div2clases; 
-  margin-left: 1rem;
+.div2clases {  
+  grid-area: 1 / 2 / 2 / 3;
  }
 
-.div3clases { grid-area: div3clases;
-  margin-left: 1rem;
+.div3clases { 
+  grid-area: 2 / 1 / 3 / 2;
 }
-.div4clases { grid-area: div4clases;
-  margin-left: 1rem;
+.div4clases { 
+  grid-area: 2 / 2 / 3 / 3;
 }
-.div5clases { grid-area: div5clases;
-  margin-left: 1rem;
-}
-.div6clases { grid-area: div6clases;
-  margin-left: 1rem;
-}
-.div7clases { grid-area: div7clases;
-  margin-left: 1rem;
-}
-.div8clases { grid-area: div8clases;
-  margin-left: 1rem;
-}
+
 
 /* SECCION CLASES FIN */
 
@@ -604,7 +593,7 @@ main {
     gap: 3rem;
     }
 
-    /* NOSOTROS PAGINA */
+    /* NOSOTROS PÁGINA */
 
     .nosotros__contenedor{
       display: flex;
@@ -613,23 +602,26 @@ main {
       align-items: center;
     }
 
-    .nosotros__izquierda{
+    /* EQUIPAMIENTO PÁGINA */
 
+    .equipamiento__contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     }
 
-    .nosotros__derecha{
+    /* CLASES PÁGINA */
 
-      
+    .main__clases{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     }
 
-    .nosotros__abderecha{
-
+    .main__clases img{
+      width: 100%;
     }
-
-    .nosotros__abizquierda{
-
-    }
-
 }
 
 @media all and (min-width: 320px) 
