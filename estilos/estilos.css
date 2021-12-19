@@ -87,12 +87,33 @@ main {
 /* FOOTER INICIO */
 
 .footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr 3fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   justify-content: flex-end;
   align-items: center;
   flex-direction: row;
   padding: 1rem 1rem;
   background-color: #24252a;
+}
+
+.header__logo { 
+  grid-area: 1 / 1 / 2 / 2; 
+}
+.footer__info { 
+  grid-area: 1 / 2 / 2 / 3; 
+}
+.footer__map { 
+  grid-area: 1 / 3 / 2 / 4; 
+}
+.footer__redes { 
+  grid-area: 1 / 4 / 2 / 5; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* FOOTER FIN */
@@ -138,11 +159,14 @@ main {
 /* VIDEO + DESCRIPCION INICIO */
 
 .video__descripcion {
-  color: white;
   padding: 1rem 1rem;
   width: 100%;
   height: 70vh;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   gap: 5rem;
   overflow: hidden;
   align-items: center;
@@ -169,31 +193,42 @@ main {
 /* SECCIONES INICIO */
 
 .secciones {
-  background-color: #24252a;
-  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   padding: 2rem 4rem;
   width: 100%;
   height: 70vh;
-  display: flex;
   flex-direction: row;
   gap: 5rem;
   overflow: hidden;
   font-size: 2rem;
 }
 
+.equipamiento__secciones { 
+  grid-area: 1 / 1 / 2 / 2; 
+}
+.clases__secciones { 
+  grid-area: 1 / 2 / 2 / 3; 
+}
+.contacto__secciones { 
+  grid-area: 1 / 3 / 2 / 4; 
+}
+.nosotros__secciones { 
+  grid-area: 1 / 4 / 2 / 5; 
+}
+
 /* SECCIONES FIN */
 
 /* GALERIA DE IMAGENES INICIO */
 
-.galeria__imagenes {
-  background-color: #24252a;
-  color: white;
-  padding: 2rem 4rem;
-  width: 100%;
-  height: 70vh;
-  display: flex;
-  gap: 5rem;
-  overflow: hidden;
+.grid-gallery {
+  display: grid;
+  grid-auto-rows: 200px;
+  grid-gap: 1rem;
+  grid-auto-flow: row dense;
 }
 
 .galeria__img {
@@ -204,31 +239,75 @@ main {
   height: 15rem;
 }
 
+.grid-gallery__item:nth-child(11n+1) {
+  grid-column: span 1;
+}
+
+.grid-gallery__item:nth-child(11n+4) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.grid-gallery__item:nth-child(11n+6) {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+.grid-gallery__item:nth-child(11n+7) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.grid-gallery__item:nth-child(11n+8) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.grid-gallery__item:nth-child(11n+9) {
+  grid-row: span 3;
+}
+
+.grid-gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* GALERIA DE IMAGENES FIN */
 
 /* SECCION NOSOTROS INICIO */
 
 .nosotros__contenedor {
-  background-color: #24252a;
-  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   padding: 2rem 4rem;
   width: 100%;
-  height: 70vh;
-  display: flex;
+  height: 100%;
   gap: 5rem;
   overflow: hidden;
   align-items: center;
+  font-size: 2rem;
 }
 
 .nosotros__izquierda {
-  flex-basis: 100%;
-  font-size: 1.5rem;
-  padding: 6rem;
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 .nosotros__derecha {
-  flex-basis: 100%;
+  grid-area: 1 / 2 / 2 / 3;
 }
+
+.nosotros__abizquierda´{
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.nosotros__abderecha{
+  grid-area: 2 / 2 / 3 / 3;
+}
+
 /* SECCION NOSOTROS FIN */
 
 /* SECCION EQUIPAMIENTO INICIO */
@@ -414,16 +493,7 @@ main {
 {
 
     /* NAVEGACION */
-    .li,
-    .a,
-    .button {
-      font-family: "Montserrat", sans-serif;
-      font-weight: 500;
-      font-size: 1.6rem;
-      color: #edf0f1;
-      text-decoration: none;
-    }
-    
+
     .header {
       flex-direction: column;
     }
@@ -473,14 +543,99 @@ main {
     
     /* HERO */
 
+    .hero{
+      height: 100%;
+      background-size: auto;
+      
+    }
+    
     .hero__article{
       font-size: 1.7rem;
     }
+    .hero__texto {
+      width: 100%;
+    }
 
+    /* VIDEO + DESCRIPCION INICIO */
 
+    .video__descripcion {
+     grid-template-columns: 2fr;
+     grid-template-rows: repeat(2, 1fr);
+     grid-column-gap: 0px;
+     grid-row-gap: 0px;
+     height: 100%;
+    }
 
+    .video__contenedor { 
+      grid-area: 1 / 1 / 2 / 2; 
+    }
 
+    .descripcion__contenedor { 
+      grid-area: 2 / 1 / 3 / 2; 
+    }
 
+    /* SECCIONES */
 
+    .secciones{
+      height: 100%;
+    }
 
-  }
+    .equipamiento__secciones { 
+      grid-area: 1 / 1 / 2 / 2; 
+    }
+    
+    .clases__secciones { 
+    grid-area: 2 / 1 / 3 / 2; 
+    }
+    
+    .contacto__secciones { 
+    grid-area: 3 / 1 / 4 / 2; 
+    }
+    
+    .nosotros__secciones { 
+    grid-area: 4 / 1 / 5 / 2; 
+    }
+
+     /* FOOTER */
+    
+     .footer{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    }
+
+    /* NOSOTROS PAGINA */
+
+    .nosotros__contenedor{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .nosotros__izquierda{
+
+    }
+
+    .nosotros__derecha{
+
+      
+    }
+
+    .nosotros__abderecha{
+
+    }
+
+    .nosotros__abizquierda{
+
+    }
+
+}
+
+@media all and (min-width: 320px) 
+{
+    .grid-gallery {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+}
