@@ -417,7 +417,7 @@ main {
   background: #652d91;
 }
 
-..contacto-form form {
+.contacto-form form {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -501,16 +501,12 @@ background-color: #652d91;
     .button {
       margin-left: 2rem;
       padding: 0.9rem 2.5rem;
-      background-color: rgba(0, 136, 169, 1);
       border: none;
       border-radius: 50px;
       cursor: pointer;
       transition: all 0.3s ease 0s;
     }
     
-    .button:hover {
-      background-color: rgba(0, 136, 169, 0.8);
-    }
     
     .header__logo {
       width: 100%;
@@ -537,20 +533,22 @@ background-color: #652d91;
       transition: all 0.3s ease 0s;
     }
     
-    .nav__links li a:hover {
-      color: #0088a9;
-    }
-    
     /* HERO */
 
     .hero{
-      height: 100%;
-      background-size: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       
     }
     
     .hero__article{
       font-size: 1.7rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     .hero__texto {
       width: 100%;
