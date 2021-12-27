@@ -6,87 +6,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/19279dce4f.js" crossorigin="anonymous"></script>
-    <title>Nosotros</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>NOSOTROS</title>
   </head>
   <body>
-    <header class="header">
-      <a href="../index.html" class="header__logo"><img class="header__logo" src="../assets/LOGOTIPO_2020_FLEX.png" alt="header__logo" /></a>
-      <nav>
-        <ul class="nav__links">
-          <li class="li"><a class="a" href="../index.html">Inicio</a></li>
-          <li class="li"><a class="a" href="#">Nosotros</a></li>
-          <li class="li"><a class="a" href="./equipamiento.html">Equipamiento</a></li>
-          <li class="li"><a class="a" href="./clases.html">Clases</a></li>
-          <a href="./contacto.html"><button class="button">Contacto</button></a>
-        </ul>
-      </nav>  
-    </header>
-    <!-- NAVEGACION -->
-    <main class="nosotros__contenedor">
-      <div class="nosotros__izquierda">
-        <h1>Sobre nosotros</h1>
-        <br>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-          officia a magnam amet nostrum? Perferendis magni distinctio quasi! Nam
-          distinctio doloribus inventore, consequatur soluta ipsam eos ipsa,
-          quos magnam maiores dolorem voluptate, asperiores commodi mollitia
-          nostrum rerum. Recusandae vero laudantium in vitae officia!
-          Perspiciatis sed aspernatur dicta suscipit obcaecati dolor explicabo
-          exercitationem architecto tempora inventore voluptas mollitia sint
-          minima culpa ipsam ducimus, dignissimos laborum saepe? Magni molestiae
-          necessitatibus, omnis perferendis natus perspiciatis non tempora!
-          Excepturi minima architecto voluptas aut aliquam asperiores ipsum,
-          soluta est magni a consequuntur esse impedit quae omnis officiis,
-          distinctio provident obcaecati expedita harum. Commodi, deleniti quam?
-        </p>
-      </div>
-      <div class="nosotros__derecha">
-        <img src="../assets/imagen4.png" alt="">
-      </div>
-      <div class="nosotros__abderecha"> 
-        <h2>Nuestras sucursales</h2>
-        <br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, officia!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, officia!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, officia!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, officia!</p>
-      </div>
+    <body class="body__fondo">
+      <nav class="sticky-top navbar navbar-expand-lg navbar-dark nav__color">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="header__logo" src="../assets/LOGOTIPO_2020_FLEX.png" alt="header__logo" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item ms-auto">
+                <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+              </li>
+              <li class="nav-item ms-auto">
+                <a class="nav-link active" aria-current="page" href="../secciones/nosotros.html"">NOSOTROS</a>
+              </li>
+              <li class="nav-item ms-auto">
+                <a class="nav-link active" aria-current="page" href="../secciones/equipamiento.html">EQUIPAMIENTO</a>
+              </li>
+              <li class="nav-item ms-auto">
+                <a class="nav-link active" aria-current="page" href="../secciones/clases.html">CLASES</a>
+              </li>
+              <li class="nav-item ms-auto">
+                <a class="nav-link active" href="../secciones/contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- NAVEGACION -->
+      <main>
+        <div class="container-fluid position-relative half-fluid">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 position-lg-absolute left-half h-100">
+                <div class="image"></div>
+              </div>
+              <div class="col-lg-6 offset-lg-6 py-5 ps-lg-5">
+                <h1>Bootstrap 5 Grid with half fluid / half container</h1>
+                <h5 class="text-muted pb-3"><i>Image left example</i></h5>
+                <p>I'm often building sites using Bootstrap containers, but still want a half image to extend all the way to the edge of the screen. It also needs to be responsive, so that on smaller screens the image stacks and is full width (similar to if it were in a fluid-container), while the text remains in the container. This requries a combination of Boostrap container and container-fluid, plus some grid hacking. 🤓</p>
+                <p><a href="https://getbootstrap.com/docs/5.0/layout/containers/" target="_blank">Learn more about Bootstrap containers here.</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="container-fluid position-relative half-fluid">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 position-lg-absolute right-half h-100">
+                <div class="image"></div>
+              </div>
+              <div class="col-lg-6 py-5 pe-lg-5">
+                <h1>Bootstrap 5 Grid with half fluid / half container</h1>
+                <h5 class="text-muted pb-3"><i>Image right example</i></h5>
+                <p>I'm often building sites using Bootstrap containers, but still want a half image to extend all the way to the edge of the screen. It also needs to be responsive, so that on smaller screens the image stacks and is full width (similar to if it were in a fluid-container), while the text remains in the container. This requries a combination of Boostrap container and container-fluid, plus some grid hacking. 🤓</p>
+                <p><a href="https://getbootstrap.com/docs/5.0/layout/containers/" target="_blank">Learn more about Bootstrap containers here.</a></p>
+              </div>
+            </div>
+          </div>
+        </div>                
 
-      <div class="nosotros__abizquierda">
-        <img src="../assets/imagen5.png" alt="">
+      </main>
+
+      <!-- MAIN NOSOTROS-->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <a href="#"><img src="./assets/LOGOTIPO_2020_FLEX.jpg" alt=""></a>
+            <h6>Información:</h6>
+            <p class="text-justify">gimnasioflex.com.ar / <i>0236 15-460-6019 / </i> Almte. Brown 157 / mailfantasía@gmail.com</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categorias</h6>
+            <ul class="footer-links">
+              <li><a href="../index.html">Principal</a></li>
+              <li><a href="../secciones/nosotros.html">Institucional</a></li>
+              <li><a href="../secciones/equipamiento.html">Equipamiento</a></li>
+              <li><a href="../secciones/clases.html">Clases</a></li>
+              <li><a href="../secciones/contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13137.756730189716!2d-60.9538023!3d-34.5930544!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc42606df61caa165!2sGimnasio%20Flex!5e0!3m2!1ses-419!2sar!4v1637941016671!5m2!1ses-419!2sar"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <hr>
       </div>
-    </main>
-    <!-- MAIN -->
-    <footer class="footer">
-      <div class="header__logo">
-        <a href="./index.html" class="header__logo"><img class="header__logo" src="../assets/LOGOTIPO_2020_FLEX.png" alt="header__logo" /></a>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+         <a href="#">GYM FLEX</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="whatsapp" href="#"><i class="fa fa-whatsapp"></i></a></li> 
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="footer__info">
-        <p>Más información:</p>
-        <p>Almte. Brown 157</p>
-        <p>0236 15-460-6019</p>
-        <p>mailfantasía@gmail.com</p>
-        <p>www.gimnasioflex.com</p>
-      </div>
-      <div class="footer__map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13137.756730189716!2d-60.9538023!3d-34.5930544!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc42606df61caa165!2sGimnasio%20Flex!5e0!3m2!1ses-419!2sar!4v1637941016671!5m2!1ses-419!2sar"
-          width="100%"
-          height="100%"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
-      </div>
-      <div class="footer__redes">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <br>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <br>
-        <a href="#"><i class="fab fa-whatsapp" ></i></a>
-      </div>
-    </footer>
-    <!--FOOTER -->
+</footer>
+<!-- footer nuevo  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- SCRIPS -->
   </body>
 </html>
