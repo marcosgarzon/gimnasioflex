@@ -6,101 +6,152 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/19279dce4f.js" crossorigin="anonymous"></script>
-    <title>Contacto</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>EQUIPAMIENTO</title>
   </head>
-  <body>
-    <header class="header">
-      <a href="../index.html" class="header__logo"><img class="header__logo" src="../assets/LOGOTIPO_2020_FLEX.png" alt="header__logo" /></a>
-      <nav>
-        <ul class="nav__links">
-          <li class="li"><a class="a" href="../index.html">Inicio</a></li>
-          <li class="li"><a class="a" href="./nosotros.html">Nosotros</a></li>
-          <li class="li"><a class="a" href="./equipamiento.html">Equipamiento</a></li>
-          <li class="li"><a class="a" href="./clases.html">Clases</a></li>
-          <a href="#"><button class="button">Contacto</button></a>
-        </ul>
-      </nav>  
-    </header>
-    <!-- NAVEGACION -->
-    <main class="formulario__grilla">
-      <div class="content">
-
-        <h1 class="logo__contacto">Formulario <span>consultas</span></h1>
-
-        <div class="contacto-envoltura animated bounceInUp">
-            <div class="contacto-form">
-                <h3>Contáctenos</h3>
-                <form action="">
-                    <p>
-                        <label>Nombre y Apellido</label>
-                        <input type="text" name="fullname">
-                    </p>
-                    <p>
-                        <label>Correo electrónico</label>
-                        <input type="email" name="email">
-                    </p>
-                    <p>
-                        <label>Teléfono celular</label>
-                        <input type="tel" name="phone">
-                    </p>
-                    <p>
-                        <label>Asunto</label>
-                        <input type="text" name="affair">
-                    </p>
-                    <p class="block">
-                       <label>Mensaje</label> 
-                        <textarea name="message" rows="3"></textarea>
-                    </p>
-                    <p class="block">
-                        <button>
-                            Enviar
-                        </button>
-                    </p>
-                </form>
-            </div>
-            <div class="contacto-info">
-                <h4>Más información</h4>
-                <ul class="ul__contacto">
-                    <li><i class="fas fa-map-marker-alt"></i> Almte. Brown 157 </li>
-                    <li><i class="fas fa-phone"></i> 0236 15-460-6019 </li>
-                    <li><i class="fas fa-envelope-open-text"></i> mailfantasía@gmail.com</li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident ipsam necessitatibus repellendus?</p>
-                <p>www.gimnasioflex.com</p>
-            </div>
+  <body class="body__fondo">
+    <nav class="sticky-top navbar navbar-expand-lg navbar-dark nav__color">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="header__logo" src="../assets/LOGOTIPO_2020_FLEX.png" alt="header__logo" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item ms-auto">
+              <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+            </li>
+            <li class="nav-item ms-auto">
+              <a class="nav-link active" aria-current="page" href="../secciones/nosotros.html"">NOSOTROS</a>
+            </li>
+            <li class="nav-item ms-auto">
+              <a class="nav-link active" aria-current="page" href="../secciones/equipamiento.html">EQUIPAMIENTO</a>
+            </li>
+            <li class="nav-item ms-auto">
+              <a class="nav-link active" aria-current="page" href="../secciones/clases.html">CLASES</a>
+            </li>
+            <li class="nav-item ms-auto">
+              <a class="nav-link active" href="#">CONTACTO</a>
+            </li>
+          </ul>
         </div>
-    </div>
+      </div>
+    </nav>
+    <!-- NAVEGACION -->
+    <span class="espacio__blanco">
+      <hr class="separador" />
+    </span>
+    <!-- SEPARADOR -->
+    <main class="formulario__grilla">
+      <div class="container">
+        <form onsubmit="sendEmail(event)">
+          <legend>Formulario de contacto</legend>
+          <div id="alert-field" class="alert hidden">
+            <p>Uh eh, algo malió sal</p>
+          </div>    
+          <div class="form-group col-xs-6">
+            <label for="name-field">Nombre</label>
+            <input type="text" class="form-control" id="name-field" name="name-field" placeholder="Your name" required>
+          </div>
+          
+          <div class="form-group col-xs-6">
+            <label for="email-field">Email</label>
+            <input type="email" class="form-control" id="email-field" name="email-field" placeholder="Email address" required>
+          </div>
+          
+          <div id="subject-select" class="form-group col-xs-12">
+            <label for="subject-field">Asunto</label>
+            <select class="form-control" name="subject-field" onchange="changeSubject(event)"  required>
+              <option value="Clases">Clases</option>
+              <option value="Precios">Precios</option>
+              <option value="Horarios">Horarios</option>
+              <option value="Sucursales">Sucursales</option>
+              <option value="Otros">Otros</option>
+            </select>
+          </div>
+          
+          <div id="hidden-other-subject" class="form-group col-xs-6 hidden">
+            <label for="other-subject-field">Otros</label>
+            <input type="text" class="form-control" id="other-subject-field" name="other-subject-field" placeholder="Other subject" />
+          </div>
+          
+          <div class="form-group col-xs-12">
+            <label for="body-field">Mensaje</label>
+            <textarea id="body-field" name="body-field" class="form-control" placeholder="Type your message here" required></textarea>
+          </div>
+          
+          <div class="form-group col-xs-12">
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>  
+          </div>
+          
+        </form>
+      </div>
     </main>
     <!--MAIN FORMULARIO-->
-    <footer class="footer">
-      <div class="header__logo">
-        <a href="./index.html" class="header__logo"><img class="header__logo" src="../assets/LOGOTIPO_2020_FLEX.png" alt="header__logo" /></a>
+    <span class="espacio__blanco">
+      <hr class="separador" />
+    </span>
+    <!-- SEPARADOR -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <a href="#"><img src="../assets/LOGOTIPO_2020_FLEX.jpg" alt=""></a>
+            <h6>Información:</h6>
+            <p class="text-justify">gimnasioflex.com.ar / <i>0236 15-460-6019 / </i> Almte. Brown 157 / mailfantasía@gmail.com</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categorias</h6>
+            <ul class="footer-links">
+              <li><a href="../index.html">Principal</a></li>
+              <li><a href="../secciones/nosotros.html">Institucional</a></li>
+              <li><a href="../secciones/equipamiento.html">Equipamiento</a></li>
+              <li><a href="#">Clases</a></li>
+              <li><a href="../secciones/contacto.html">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13137.756730189716!2d-60.9538023!3d-34.5930544!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc42606df61caa165!2sGimnasio%20Flex!5e0!3m2!1ses-419!2sar!4v1637941016671!5m2!1ses-419!2sar"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <hr>
       </div>
-      <div class="footer__info">
-        <p>Más información:</p>
-        <p>Almte. Brown 157</p>
-        <p>0236 15-460-6019</p>
-        <p>mailfantasía@gmail.com</p>
-        <p>www.gimnasioflex.com</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+         <a href="#">GYM FLEX</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="whatsapp" href="#"><i class="fa fa-whatsapp"></i></a></li> 
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="footer__map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13137.756730189716!2d-60.9538023!3d-34.5930544!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc42606df61caa165!2sGimnasio%20Flex!5e0!3m2!1ses-419!2sar!4v1637941016671!5m2!1ses-419!2sar"
-          width="100%"
-          height="100%"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
-      </div>
-      <div class="footer__redes">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <br>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <br>
-        <a href="#"><i class="fab fa-whatsapp" ></i></a>
-      </div>
-    </footer>
-    <!--FOOTER -->
+</footer>
+<!-- footer nuevo  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- SCRIPS -->
   </body>
 </html>
