@@ -334,7 +334,28 @@ main {
 
 }
 
+
+@media (min-width: 1920px) {
+
+  .bigResolucion{
+    height: 400px;
+  }
+}
+
 /* NOSOTROS PAGINA */
+
+@media (min-width: 1440px){
+  .BigFormulario{
+    width: 40%!important;
+  }
+}
+
+@media (min-width: 2560px){
+  .BigFormulario{
+    width: 30%!important;
+  }
+
+/* CONTACTO PAGINA */
 
 #galeria__equipamiento .col-lg-4 {
   padding: 2.5rem;
