@@ -26,8 +26,12 @@ main {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  padding-right: 2rem!important;
-  padding-left: 2rem!important;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+  color: #ffdd17;
 }
 
 .separador{
@@ -118,15 +122,12 @@ main {
   padding: 2rem;
 }
 
-
 /* HERO SECTION */
 
 .descripcion__contenedor {
   font-size: 2rem; 
   background-color: #ffffff;
-
 }
-
 
 .video__texto{
   display: flex;
@@ -137,7 +138,6 @@ main {
 }
 
 /* VIDEO + DESCRIPCION */
-
 
 .carousel-indicators {
   position: static;
@@ -158,15 +158,18 @@ main {
   line-height:24px;
   color:#ffffff;
 }
+
 .site-footer hr
 {
   border-top-color:#bbb;
   opacity:0.5
 }
+
 .site-footer hr.small
 {
   margin:20px 0
 }
+
 .site-footer h6
 {
   color:#fff;
@@ -175,41 +178,50 @@ main {
   margin-top:5px;
   letter-spacing:2px
 }
+
 .site-footer a
 {
   color:#ffffff;
 }
+
 .site-footer a:hover
 {
   color:#3366cc;
   text-decoration:none;
 }
+
 .footer-links
 {
   padding-left:0;
   list-style:none
 }
+
 .footer-links li
 {
   display:block
 }
+
 .footer-links a
 {
   color:#ffffff
 }
+
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
   color:#3366cc;
   text-decoration:none;
 }
+
 .footer-links.inline li
 {
   display:inline-block
 }
+
 .site-footer .social-icons
 {
   text-align:right
 }
+
 .site-footer .social-icons a
 {
   width:40px;
@@ -220,10 +232,12 @@ main {
   border-radius:100%;
   background-color:#ffffff
 }
+
 .copyright-text
 {
   margin:0
 }
+
 @media (max-width:991px)
 {
   .site-footer [class^=col-]
@@ -231,6 +245,7 @@ main {
     margin-bottom:30px
   }
 }
+
 @media (max-width:767px)
 {
   .site-footer
@@ -242,17 +257,20 @@ main {
     text-align:center
   }
 }
+
 .social-icons
 {
   padding-left:0;
   margin-bottom:0;
   list-style:none
 }
+
 .social-icons li
 {
   display:inline-block;
   margin-bottom:4px
 }
+
 .social-icons li.title
 {
   margin-right:15px;
@@ -261,6 +279,7 @@ main {
   font-weight:700;
   font-size:13px
 }
+
 .social-icons a{
   background-color:#eceeef;
   color:#818a91;
@@ -276,11 +295,13 @@ main {
   -o-transition:all .2s linear;
   transition:all .2s linear
 }
+
 .social-icons a:active,.social-icons a:focus,.social-icons a:hover
 {
   color:#fff;
   background-color:#13d41def;
 }
+
 .social-icons.size-sm a
 {
   line-height:34px;
@@ -288,10 +309,12 @@ main {
   width:34px;
   font-size:14px
 }
+
 .social-icons a.facebook:hover
 {
   background-color:#3b5998;
 }
+
 .social-icons a.instagram:hover
 {
   background: #f09433; 
@@ -299,8 +322,8 @@ main {
   background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
   background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-    }
 }
+
 .social-icons a.whatsapp:hover
 {
   background-color:#13d41def;
@@ -337,12 +360,9 @@ main {
     flex-direction: column;
     font-size: 1rem;
   }
-
 }
 
-
 @media (min-width: 1920px) {
-
   .bigResolucion{
     height: 400px;
   }
@@ -360,16 +380,16 @@ main {
   .BigFormulario{
     width: 30%!important;
   }
-  }
+}
 
-  .ajustarImagen{
+.ajustarImagen{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 100%;
     width: 100%;
-  }
+}
 
 /* CONTACTO PAGINA */
 
@@ -382,12 +402,42 @@ main {
   height: 100%;
 }
 
+ @-webkit-keyframes kenburns-left {
+  0% {
+    -webkit-transform: scale(1) translate(0, 0);
+            transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 16% 50%;
+            transform-origin: 16% 50%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translate(-20px, 15px);
+            transform: scale(1.25) translate(-20px, 15px);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+}
 
+@keyframes kenburns-left {
+  0% {
+    -webkit-transform: scale(1) translate(0, 0);
+            transform: scale(1) translate(0, 0);
+    -webkit-transform-origin: 16% 50%;
+            transform-origin: 16% 50%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translate(-20px, 15px);
+            transform: scale(1.25) translate(-20px, 15px);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+}
 
-
+.kenburns-left:hover{
+	-webkit-animation: kenburns-left 2s ease-out both;
+	        animation: kenburns-left 2s ease-out both;
+}
 
 /* EQUIPAMIENTO GALERIA   */
-
 
 .ul__contacto{
   list-style: none;
@@ -472,14 +522,11 @@ main {
 
 /* FORMULARIO DE CONTACTO FIN */
 
-/* SECCION CLASES INICIO */
-
 .horarios {
 display: flex;
 flex-direction: column;
 width: 100%;
 background-color: #652d91;
 }
-
 
 /* SECCION CLASES */
