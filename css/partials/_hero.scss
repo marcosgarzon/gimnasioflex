@@ -1,3 +1,5 @@
+@import "./variables";
+
 .hero {
 	position: relative;
 	background-image: url("../assets/imagen9.png");
@@ -10,7 +12,7 @@
         font-weight: 800;
         margin: 0;
         padding: 0;
-      color: #ffffff;
+      color: $colorB;
       }
       
       & p {
@@ -19,7 +21,7 @@
           font-size: 20px;
           font-weight: 500;
           text-align: justify;
-        color: #ffffff;
+        color: $colorB;
       }
 }
 

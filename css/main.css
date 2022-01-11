@@ -13,7 +13,8 @@ html {
 main {
   overflow: hidden; }
 
-/* Parámetros generales*/
+/* PARÁMETROS GENERALES */
+/* VARIABLES */
 .body__fondo {
   background-image: url("../assets/fondofondo.jpg"); }
 
@@ -118,6 +119,7 @@ main {
   animation: kenburns-left 2s ease-out both; }
 
 /* EQUIPAMIENTO GALERIA   */
+/* VARIABLES */
 .nav__color {
   background-color: #652d91 !important; }
 
@@ -129,6 +131,7 @@ main {
   color: #ffdd17; }
 
 /* NAVBAR */
+/* VARIABLES */
 .hero {
   position: relative;
   background-image: url("../assets/imagen9.png");
@@ -158,6 +161,7 @@ main {
     opacity: 0.8; }
 
 /* CARRUSEL */
+/* VARIABLES */
 .site-footer {
   background-color: #652d91;
   padding: 45px 0 20px;
@@ -170,7 +174,7 @@ main {
   .site-footer hr.small {
     margin: 20px 0; }
   .site-footer h6 {
-    color: #fff;
+    color: #ffffff;
     font-size: 16px;
     text-transform: uppercase;
     margin-top: 5px;
@@ -194,9 +198,9 @@ main {
     width: 10.5rem; }
 
 .footer-links {
-  padding-left: 0; }
-  list-style:none
-.footer-links li {
+  padding-left: 0;
+  list-style: none; }
+  .footer-links li {
     display: block; }
   .footer-links a {
     color: #ffffff; }
@@ -237,7 +241,7 @@ main {
     -o-transition: all .2s linear;
     transition: all .2s linear; }
   .social-icons a:active, .social-icons a:focus, .social-icons a:hover {
-    color: #fff;
+    color: #ffffff;
     background-color: #13d41def; }
   .social-icons.size-sm a {
     line-height: 34px;
@@ -292,7 +296,7 @@ main {
     border: none;
     background: none;
     outline: 0;
-    color: #fff;
+    color: #ffffff;
     border-bottom: 1px solid #e7c713af; }
   .contacto-form form button {
     background: #e7c713af;
@@ -302,7 +306,7 @@ main {
   .contacto-form form button:hover,
   .contacto-form form button:focus {
     background: #e7c713fd;
-    color: #fff;
+    color: #ffffff;
     transition: background-color 1s ease-out;
     outline: 0; }
 
@@ -313,6 +317,7 @@ main {
     margin: 0 0 1rem 0; }
 
 /* FORMULARIO DE CONTACTO */
+/* VARIABLES */
 .horarios {
   display: flex;
   flex-direction: column;

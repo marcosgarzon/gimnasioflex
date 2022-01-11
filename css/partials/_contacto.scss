@@ -6,21 +6,21 @@
   .logo__contacto{
     text-align: center;
     font-size: 3em;
-    color: black;
+    color: $colorN;
     & span{
-      color: #662d91b9;
+      color: $colorVclaro;
     }
   }
     
   .contacto-envoltura {
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+    box-shadow: $boxShadow;
     & > * {
       padding: 1em;
     }
   }
     
   .contacto-form {
-    background: #652d91;
+    background: $colorV;
     & form {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -43,26 +43,26 @@
         border: none;
         background: none;
         outline: 0;
-        color: #fff;
-        border-bottom: 1px solid #e7c713af;
+        color: $colorB;
+        border-bottom: 1px solid $colorAoscuro;
     }
     & form button {
-      background: #e7c713af;
+      background: $colorAoscuro;
       border: 0;
       text-transform: uppercase;
       padding: 1em;
     }
     & form button:hover,
     & form button:focus {
-        background: #e7c713fd;
-        color: #fff;
+        background: $colorA;
+        color: $colorB;
         transition: background-color 1s ease-out;
         outline: 0;
     }
   }
     
   .contacto-info {
-    background: #662d91b9;
+    background: $colorVclaro;
     & h4, & ul, & p {
       text-align: center;
       margin: 0 0 1rem 0;
