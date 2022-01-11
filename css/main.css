@@ -14,7 +14,6 @@ main {
   overflow: hidden; }
 
 /* PARÁMETROS GENERALES */
-/* VARIABLES */
 .body__fondo {
   background-image: url("../assets/fondofondo.jpg"); }
 
@@ -119,7 +118,6 @@ main {
   animation: kenburns-left 2s ease-out both; }
 
 /* EQUIPAMIENTO GALERIA   */
-/* VARIABLES */
 .nav__color {
   background-color: #652d91 !important; }
 
@@ -131,7 +129,6 @@ main {
   color: #ffdd17; }
 
 /* NAVBAR */
-/* VARIABLES */
 .hero {
   position: relative;
   background-image: url("../assets/imagen9.png");
@@ -161,7 +158,6 @@ main {
     opacity: 0.8; }
 
 /* CARRUSEL */
-/* VARIABLES */
 .site-footer {
   background-color: #652d91;
   padding: 45px 0 20px;
@@ -317,7 +313,6 @@ main {
     margin: 0 0 1rem 0; }
 
 /* FORMULARIO DE CONTACTO */
-/* VARIABLES */
 .horarios {
   display: flex;
   flex-direction: column;
