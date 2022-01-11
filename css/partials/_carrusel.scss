@@ -1,0 +1,10 @@
+.carousel-indicators {
+    position: static;
+    & li {
+      width: 300px;
+      height: 100%;
+      opacity: 0.8;
+    }
+  }
+  
+  /* CARRUSEL */
