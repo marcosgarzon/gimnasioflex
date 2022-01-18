@@ -31,7 +31,7 @@ main {
   padding-top: 30rem;
   opacity: 0%; }
 
-.btn1 {
+.btn1, .btn2 {
   display: inline-block;
   margin: 1em 0 0 0;
   background-color: #652d91;
@@ -42,10 +42,15 @@ main {
   font-weight: 800;
   padding: 10px 20px;
   border-radius: 30px; }
-  .btn1:hover {
+  .btn1:hover, .btn2:hover {
     background-color: #530391;
     color: #ffffff;
     text-decoration: none; }
+
+.btn2 {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  border-radius: 0.3rem; }
 
 .oscure {
   background: rgba(0, 0, 0, 0.4);
@@ -58,25 +63,25 @@ main {
 
 .video__texto {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: #ffffff; }
 
 /* VIDEO + DESCRIPCION */
 .nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
-  justify-content: center;
-  text-align: center;
-  align-content: center;
   font-size: 1.5rem; }
 
 /* NOSOTROS PAGINA */
 .ajustarImagen {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   height: 100%;
   width: 100%; }

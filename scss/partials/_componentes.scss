@@ -40,6 +40,13 @@
     }
 }
 
+.btn2{
+  @extend .btn1;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  border-radius: 0.3rem;
+}
+
 .oscure{
   background: map-get($colores, colorNoscure);
   padding: 2rem;
@@ -51,32 +58,32 @@
     font-size: 2rem; 
     background-color: map-get($colores, colorB);
   }
+
+  @mixin super-centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
   .video__texto{
-    display: flex;
+    @include super-centrar;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: map-get($colores, colorB);
   }
   
   /* VIDEO + DESCRIPCION */
 
   .nosotros{
+    @include super-centrar;
     width: 100%;
     height: 100%;
-    justify-content: center;
-    text-align: center;
-    align-content: center;
     font-size: 1.5rem;
   }
   
   /* NOSOTROS PAGINA */
 
   .ajustarImagen{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include super-centrar;
     flex-direction: column;
     height: 100%;
     width: 100%;
