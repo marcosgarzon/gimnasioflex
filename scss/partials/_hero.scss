@@ -12,7 +12,7 @@
         font-weight: 800;
         margin: 0;
         padding: 0;
-      color: $colorB;
+      color: map-get($colores, colorB);
       }
       
       & p {
@@ -21,7 +21,7 @@
           font-size: 20px;
           font-weight: 500;
           text-align: justify;
-        color: $colorB;
+        color: map-get($colores, colorB);
       }
 }
 

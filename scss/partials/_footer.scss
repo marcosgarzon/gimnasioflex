@@ -2,14 +2,14 @@
 
 .site-footer
 {
-    background-color: $colorV;
+    background-color: map-get($colores, colorV);
     padding:45px 0 20px;
     font-size:15px;
     line-height:24px;
-    color:$colorB;
+    color: map-get($colores, colorB);
     & hr
     {
-        border-top-color: $colorG;
+        border-top-color: map-get($colores, colorG);
         opacity:0.5;
     }
     & hr.small
@@ -18,7 +18,7 @@
     }
     & h6
     {
-        color: $colorB;
+        color: map-get($colores, colorB);
         font-size:16px;
         text-transform:uppercase;
         margin-top:5px;
@@ -26,11 +26,11 @@
     }
     & a
     {
-        color: $colorB;
+        color: map-get($colores, colorB);
     }
     & a:hover
     {
-        color: $colorAz;
+        color: map-get($colores, colorAz);
         text-decoration:none;
     }
 
@@ -47,7 +47,7 @@
         margin-left:6px;
         margin-right:0;
         border-radius:100%;
-        background-color: $colorB;
+        background-color: map-get($colores, colorB);
     }
     & img{
       width: 10.5rem;
@@ -64,11 +64,11 @@
   }
   & a
   {
-    color: $colorB;
+    color: map-get($colores, colorB);
   }
   & a:active,& a:focus,& a:hover
   {
-    color: $colorAz;
+    color: map-get($colores, colorAz);
     text-decoration: none;
   }
   &.inline li
@@ -118,8 +118,8 @@
   }
   & a:active,& a:focus,& a:hover
   {
-    color: $colorB;
-    background-color: $colorWhatsapp;
+    color: map-get($colores, colorB);
+    background-color: map-get($colores, colorWhatsapp);
   }
   &.size-sm a
   {
@@ -130,7 +130,7 @@
   }
   & a.facebook:hover
   {
-    background-color: $colorFacebook;
+    background-color: map-get($colores, colorFacebook);
   }
   & a.instagram:hover
   {
@@ -142,7 +142,7 @@
   }
   & a.whatsapp:hover
   {
-    background-color: $colorWhatsapp;
+    background-color: map-get($colores, colorWhatsapp);
   }
 }
 

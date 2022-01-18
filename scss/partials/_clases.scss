@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: $colorV;
+    background-color: map-get($colores, colorV);
     }
     
     /* SECCION CLASES */

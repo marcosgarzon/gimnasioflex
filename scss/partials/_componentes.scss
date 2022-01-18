@@ -5,7 +5,7 @@
   }
 
   .separador{
-    color: $colorN;
+    color: map-get($colores, colorN);
     padding-left: 6rem;
     padding-right: 6rem;
   }
@@ -24,8 +24,8 @@
   .btn1 {
 	display: inline-block;
 	margin: 1em 0 0 0;
-	background-color: $colorV;
-	color: $colorB;
+	background-color: map-get($colores, colorV);
+	color: map-get($colores, colorB);
 	text-transform: uppercase;
 	border: none;
 	text-decoration: none;
@@ -34,14 +34,14 @@
 	border-radius: 30px;
     
     &:hover {
-        background-color: $colorVoscuro;
-        color: $colorB;
+        background-color: map-get($colores, colorVoscuro);
+        color: map-get($colores, colorB);
         text-decoration: none;
     }
 }
 
 .oscure{
-  background: $colorNoscure;
+  background: map-get($colores, colorNoscure);
   padding: 2rem;
 }
 
@@ -49,7 +49,7 @@
 
   .descripcion__contenedor {
     font-size: 2rem; 
-    background-color: $colorB;
+    background-color: map-get($colores, colorB);
   }
   
   .video__texto{
@@ -57,7 +57,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: $colorB;
+    background-color: map-get($colores, colorB);
   }
   
   /* VIDEO + DESCRIPCION */

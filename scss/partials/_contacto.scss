@@ -1,3 +1,5 @@
+@import "./variables";
+
 .ul__contacto{
     list-style: none;
     padding: 0;
@@ -6,9 +8,9 @@
   .logo__contacto{
     text-align: center;
     font-size: 3em;
-    color: $colorN;
+    color: map-get($colores, colorN);
     & span{
-      color: $colorVclaro;
+      color: map-get($colores, colorVclaro);
     }
   }
     
@@ -20,7 +22,7 @@
   }
     
   .contacto-form {
-    background: $colorV;
+    background: map-get($colores, colorV);
     & form {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -43,26 +45,26 @@
         border: none;
         background: none;
         outline: 0;
-        color: $colorB;
-        border-bottom: 1px solid $colorAoscuro;
+        color: map-get($colores, colorB);
+        border-bottom: 1px solid map-get($colores, colorAoscuro);
     }
     & form button {
-      background: $colorAoscuro;
+      background: map-get($colores, colorAoscuro);
       border: 0;
       text-transform: uppercase;
       padding: 1em;
     }
     & form button:hover,
     & form button:focus {
-        background: $colorA;
-        color: $colorB;
+        background: map-get($colores, colorA);
+        color: map-get($colores, colorB);
         transition: background-color 1s ease-out;
         outline: 0;
     }
   }
     
   .contacto-info {
-    background: $colorVclaro;
+    background: map-get($colores, colorVclaro);
     & h4, & ul, & p {
       text-align: center;
       margin: 0 0 1rem 0;
