@@ -47,49 +47,91 @@
       <hr class="separador" />
     </span>
     <!-- SEPARADOR -->
-    <main class="formulario__grilla">
-      <div class="container BigFormulario">
-        <form onsubmit="sendEmail(event)">
-          <legend><h1>Formulario de contacto</h1></legend>
-          <div id="alert-field" class="alert hidden">
-            <p>Error</p>
-          </div>    
-          <div class="form-group col-xs-6">
-            <label for="name-field">Nombre</label>
-            <input type="text" class="form-control" id="name-field" name="name-field" placeholder="Nombre y apellido" required>
-          </div>        
-          <div class="form-group col-xs-6">
-            <label for="email-field">Email</label>
-            <input type="email" class="form-control" id="email-field" name="email-field" placeholder="Correo electrónico" required>
+    <main>
+     <div class="container">
+          <form 
+          class="form needs-validation" 
+          id="form" 
+          action="https://formspree.io/f/mjvlglbr"
+          method="POST"
+          novalidate
+          >
+            <h2>Formulario de contacto</h2>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="first">Nombre</label>
+                  <input type="text" class="form-control" name="nombre" placeholder="Nombre" id="form" required>
+                  <div class="valid-feedback">¡Campo válido!</div>
+                  <div class="invalid-feedback">Debe completar los datos.</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="last">Apellido</label>
+                  <input type="text" class="form-control" name="apellido" placeholder="Apellido" id="form" required>
+                  <div class="valid-feedback">¡Campo válido!</div>
+                  <div class="invalid-feedback">Debe completar los datos.</div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                  <div class="valid-feedback">¡Campo válido!</div>
+                  <div class="invalid-feedback">Debe completar los datos.</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="phone">Teléfono</label>
+                  <input type="tel" class="form-control" name="telefono" id="phone" placeholder="Teléfono" required>
+                  <div class="valid-feedback">¡Campo válido!</div>
+                  <div class="invalid-feedback">Debe completar los datos.</div>
+                </div>
+              </div>
+            </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+               <label for="exampleFormControlSelect1">Seleccionar asunto</label>
+               <select class="form-select" name="subject-field" onchange="changeSubject(event)" required>
+                  <option selected disabled value="">Seleccione...</option>
+                  <option value="Clases">Clases</option>
+                  <option value="Precios">Precios</option>
+                  <option value="Horarios">Horarios</option>
+                  <option value="Sucursales">Sucursales</option>
+                  <option value="Otros">Otros</option>
+                </select>
+                <div class="valid-feedback">¡Campo válido!</div>
+                <div class="invalid-feedback">Debe completar los datos.</div>
+              </div>
+            </div>  
           </div>       
-          <div id="subject-select" class="form-group col-xs-12">
-            <label for="subject-field">Asunto</label>
-            <select class="form-control" name="subject-field" onchange="changeSubject(event)"  required>
-              <option value="Clases">Clases</option>
-              <option value="Precios">Precios</option>
-              <option value="Horarios">Horarios</option>
-              <option value="Sucursales">Sucursales</option>
-              <option value="Otros">Otros</option>
-            </select>
-          </div>       
-          <div id="hidden-other-subject" class="form-group col-xs-6 hidden">
-            <label for="other-subject-field">Otros</label>
-            <input type="text" class="form-control" id="other-subject-field" name="other-subject-field" placeholder="Otros asuntos" />
-          </div>        
-          <div class="form-group col-xs-12">
-            <label for="body-field">Mensaje</label>
-            <textarea id="body-field" name="body-field" class="form-control" placeholder="Escribe tu mensaje aquí" required></textarea>
-          </div>       
-          <div class="form-group col-xs-12">
-            <button type="submit" class="btn2">Enviar</button>  
-          </div>        
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" name="Mensaje" rows="3" required></textarea>
+              <div class="valid-feedback">¡Campo válido!</div>
+              <div class="invalid-feedback">Debe completar los datos.</div>
+            </div>
+            <div>    
+              <button type="submit" class="btn2" id="form" required>Enviar</button>          
+            </div>
         </form>
-      </div>   
-       <!--MAIN FORMULARIO-->
-       <span class="hrSimple">
-        <hr/>
-      </span>
-     <!-- SEPARADOR BLANCO -->
+    </div>   
+    <!--MAIN FORMULARIO-->
+    <span class="espacio__blanco">
+      <hr class="separador" />
+    </span>
+    <!-- SEPARADOR -->
+       <div class="row">
+         <div class="col-md-12 ajustarImagen">
+          <img src="../assets/imagenForm.png" alt="logo alternativo del gimnasio">
+        </div>
+        </div>
+     <!-- IMAGEN PÁGINA FORMULARIO -->
     </main>
     <span class="espacio__blanco">
       <hr class="separador" />
@@ -101,7 +143,7 @@
           <div class="col-sm-12 col-md-6">
             <a href="#"><img src="../assets/LOGOTIPO_2020_FLEX.jpg" alt="logo del gimnasio"></a>
             <h6>Información:</h6>
-            <p class="text-justify">gimnasioflex.com.ar / <i>0236 15-460-6019 / </i> Alte. Brown 157 / mailfantasía@gmail.com</p>
+            <p class="text-justify">gimnasioflex.com.ar / <i>0236 15-460-6019 / </i> Alte. Brown 157 / flexgimnasio90@gmail.com</p>
           </div>
           <div class="col-xs-6 col-md-3">
             <h6>Categorias</h6>
@@ -151,6 +193,58 @@
   <script>
     AOS.init();
   </script>
-  <!-- SCRIPS -->
+  <script>
+  (function () {
+    'use strict'
+  
+    var forms = document.querySelectorAll('.needs-validation')
+  
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+  
+          form.classList.add('was-validated')
+        }, false)
+      })
+  })()
+  </script>
+  <script>
+(function() {
+    var $contactForm = $('#contactForm');
+    // VALIDATE FORM
+    $contactForm.validate();
+    $contactForm.submit(function(e) {
+        if ($(this).valid())
+             {...}
+       return false;
+     });
+})();
+</script>
+<script>
+    const $form = document.querySelector('#form')
+
+    $form.addEventListener('submit', handleSubmit)
+
+    async function handleSubmit(event) {
+      event.preventDefault()
+      const form = new FormData(this)
+      const response = await fetch(this.action, {
+        method: this.method, 
+        body: form,
+        headers: {
+          'Accept': 'application/json'
+        }
+      } )
+      if (response.ok) {
+        this.reset()
+        alert('Gracias por contactarnos, recibirás una respuesta pronto')
+      }
+    }
+  </script>
+  <!-- SCRIPTS -->
   </body>
 </html>

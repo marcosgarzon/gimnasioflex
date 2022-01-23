@@ -54,17 +54,15 @@
 
 /* NOSOTROS QUERY */
 
-@media (min-width: 1440px){
-  .BigFormulario{
-    width: 40%!important;
-  }
-}
-
-@media (min-width: 2560px){
-  .BigFormulario{
-    width: 30%!important;
+@media (max-width: 355px){
+  .ajustarImagen img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;    
   }
 }
 
 /* CONTACTO QUERY */
-
