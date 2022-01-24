@@ -5,7 +5,7 @@
     padding: 0;
   }
   
-  .logo__contacto{
+.logo__contacto{
     text-align: center;
     font-size: 3em;
     color: map-get($colores, colorN);
@@ -14,14 +14,14 @@
     }
   }
     
-  .contacto-envoltura {
+.contacto-envoltura {
     box-shadow: $boxShadow;
     & > * {
       padding: 1em;
     }
   }
     
-  .contacto-form {
+ .contacto-form {
     background: map-get($colores, colorV);
     & form {
       display: grid;
@@ -40,13 +40,13 @@
     & form button,
     & form input,
     & form textarea {
-        width: 100%;
-        padding: .7em;
-        border: none;
-        background: none;
-        outline: 0;
-        color: map-get($colores, colorB);
-        border-bottom: 1px solid map-get($colores, colorAoscuro);
+      width: 100%;
+      padding: .7em;
+      border: none;
+      background: none;
+      outline: 0;
+      color: map-get($colores, colorB);
+      border-bottom: 1px solid map-get($colores, colorAoscuro);
     }
     & form button {
       background: map-get($colores, colorAoscuro);
@@ -56,18 +56,18 @@
     }
     & form button:hover,
     & form button:focus {
-        background: map-get($colores, colorA);
-        color: map-get($colores, colorB);
-        transition: background-color 1s ease-out;
-        outline: 0;
+      background: map-get($colores, colorA);
+      color: map-get($colores, colorB);
+      transition: background-color 1s ease-out;
+      outline: 0;
     }
   }
     
-  .contacto-info {
+.contacto-info {
     background: map-get($colores, colorVclaro);
     & h4, & ul, & p {
-      text-align: center;
-      margin: 0 0 1rem 0;
+    text-align: center;
+    margin: 0 0 1rem 0;
     }
   }
     

@@ -4,18 +4,18 @@
     background-image: url("../assets/fondofondo.jpg");
   }
 
-  .separador{
+.separador{
     color: map-get($colores, colorN);
     padding-left: 6rem;
     padding-right: 6rem;
   }
   
-  .espacio__blanco{
+.espacio__blanco{
     display: block;
     padding: 1rem;
   }
   
-  .btn1 {
+.btn1 {
 	display: inline-block;
 	margin: 1em 0 0 0;
 	background-color: map-get($colores, colorV);
@@ -46,37 +46,37 @@
   padding: 2rem;
 }
 
-  /* COMPONENTES REUTILIZABLES */
+/* COMPONENTES REUTILIZABLES */
 
   .descripcion__contenedor {
     font-size: 2rem; 
     background-color: map-get($colores, colorB);
   }
 
-  @mixin super-centrar{
+ @mixin super-centrar{
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .video__texto{
+.video__texto{
     @include super-centrar;
     flex-direction: column;
     background-color: map-get($colores, colorB);
   }
   
-  /* VIDEO + DESCRIPCION */
+/* VIDEO + DESCRIPCION */
 
-  .nosotros{
+.nosotros{
     @include super-centrar;
     width: 100%;
     height: 100%;
     font-size: 1.5rem;
   }
   
-  /* NOSOTROS PAGINA */
+/* NOSOTROS PAGINA */
 
-  .ajustarImagen{
+.ajustarImagen{
     @include super-centrar;
     flex-direction: column;
     height: 100%;
@@ -87,12 +87,12 @@
 
 #galeria__equipamiento {
     .col-lg-4 {
-    padding: 2.5rem;
-    }
+      padding: 2.5rem;
+              }
     & img{
-  width: 100%;
-  height: 100%;
-    }
+      width: 100%;
+      height: 100%;
+        }
 }
   
    @-webkit-keyframes kenburns-left {
@@ -130,4 +130,4 @@
               animation: kenburns-left 2s ease-out both;
   }
   
-  /* EQUIPAMIENTO GALERIA   */
+/* EQUIPAMIENTO GALERIA   */
