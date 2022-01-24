@@ -14,8 +14,6 @@ main {
   overflow: hidden; }
 
 /* PARÁMETROS GENERALES */
-/* MAP DE COLORES PRINCIPALES */
-/* VARIABLE */
 .body__fondo {
   background-image: url("../assets/fondofondo.jpg"); }
 
@@ -120,8 +118,6 @@ main {
   animation: kenburns-left 2s ease-out both; }
 
 /* EQUIPAMIENTO GALERIA   */
-/* MAP DE COLORES PRINCIPALES */
-/* VARIABLE */
 .nav__color {
   background-color: #652d91 !important; }
 
@@ -133,8 +129,6 @@ main {
   color: #ffdd17; }
 
 /* NAVBAR */
-/* MAP DE COLORES PRINCIPALES */
-/* VARIABLE */
 .hero {
   position: relative;
   background-image: url("../assets/imagen9.png");
@@ -164,8 +158,6 @@ main {
     opacity: 0.8; }
 
 /* CARRUSEL */
-/* MAP DE COLORES PRINCIPALES */
-/* VARIABLE */
 .site-footer {
   background-color: #652d91;
   padding: 45px 0 20px;
@@ -264,8 +256,6 @@ main {
     background-color: #13d41def; }
 
 /* FOOTER */
-/* MAP DE COLORES PRINCIPALES */
-/* VARIABLE */
 .ul__contacto {
   list-style: none;
   padding: 0; }
@@ -323,8 +313,6 @@ main {
     margin: 0 0 1rem 0; }
 
 /* FORMULARIO DE CONTACTO */
-/* MAP DE COLORES PRINCIPALES */
-/* VARIABLE */
 .horarios {
   display: flex;
   flex-direction: column;
