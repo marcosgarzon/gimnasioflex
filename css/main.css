@@ -168,7 +168,8 @@ main {
 
 #galeria__equipamiento img {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  object-fit: cover; }
 
 @-webkit-keyframes kenburns-left {
   0% {
