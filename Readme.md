@@ -29,7 +29,7 @@
 
 ![](https://marcosgarzon.github.io/gimnasioflex/assets/Nota10.PNG)
 
-## Certificado del curso aprobado:
+## Certificado de curso aprobado:
 
 [Diploma](https://www.coderhouse.com/certificados/61f2f230e2a0590a1568245b "Certificado")
 
