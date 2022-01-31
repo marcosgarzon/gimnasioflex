@@ -1,6 +1,6 @@
 # Proyecto final
 
-## Contenido:
+## Contenido del curso:
 
 - Prototipado;
 - HTML5;
@@ -11,7 +11,7 @@
 - Grids;
 - Animaciones;
 - Transiciones;
-- @media + pseudoclases
+- @media + pseudoclases;
 - Bootstrap 5;
 - SASS - SCSS;
 - GIT;
