@@ -6,7 +6,7 @@
 - HTML5;
 - CSS3;
 - Wireframe;
-- Box modeling;
+- Box modelling;
 - Flexbox;
 - Grids;
 - Animaciones;
